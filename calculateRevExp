@@ -1,0 +1,47 @@
+const users = [
+    {
+        name: 'Erik',
+        revenues: [115.3, 48.7, 98.3, 14.5],
+        expanses: [85.3, 13.5, 19.9]
+    },
+    {
+        name: 'Emmyline',
+        revenues: [24.6, 214.3, 45.3],
+        expanses: [185.3, 12.1, 120.0]
+    },
+    {
+        name: 'Nina',
+        revenues: [1109.8, 120.3, 340.2, 45.3],
+        expanses: [450.2, 30]        
+    }
+]
+
+for (let user of users){
+
+    const balance = sumBalanece(user.revenues, user.expanses)
+    
+    if (balance >= 0){
+        console.log(`${user.name} you are positive in this month, your balance is: ${balance.toFixed(2)}!`)
+    }else {
+        console.log(`${user.name} you are negative in this month, your balance is: ${balance.toFixed(2)}!`)
+    }
+}
+
+function sumBalanece(revenues, expanses){
+
+    const totalRevenues = sumNumber(revenues)
+    const totalExpanses = sumNumber(expanses)
+
+    const total = totalRevenues - totalExpanses
+
+    return total
+}
+
+function sumNumber(numbers){
+    let sum = 0
+
+    for (let number of numbers){
+        sum = sum + number
+    }
+    return sum
+}
