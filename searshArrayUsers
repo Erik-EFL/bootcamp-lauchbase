@@ -1,0 +1,26 @@
+const users = [
+    {
+        name: 'Erik',
+        tecnology: 'HTML5, CSS3, JavaScript'
+    },
+    {
+        name: 'Rodolfo',
+        tecnology: 'Phyton, C++'
+    },
+    {
+        name: 'Zobo Mafu',
+        tecnology: '.Net, Java'
+    }
+]
+
+function showUsers (user){
+    for (let i = 0; i < user.length; i++){
+        
+    }
+    const list = user
+    return (list)
+}
+
+const showlist = showUsers(users)
+
+console.log(showlist)
