@@ -1,0 +1,22 @@
+const users =[
+    {
+     name: 'Erik',
+     weigth: 70,
+     heigth: 1.70
+    }
+]
+
+for (let user of users) {
+    const BAI = calcBAI (user.weigth, user.heigth)
+
+    if (BAI >= 30){
+        console.log(`${user.name} you are above of weigth, ${BAI}, Kg`)
+    }else {
+        console.log(`${user.name} you are in the ideal weigth ${BAI} for peoples of yours heigth! Congratulations!`)
+    }
+}
+
+function calcBAI (heigth, weigth) {
+const BAI = weigth / (heigth * weigth);
+return BAI
+}
