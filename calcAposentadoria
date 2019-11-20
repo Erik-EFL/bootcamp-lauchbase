@@ -1,0 +1,33 @@
+const nome = 'Emmy';
+const idade = 55;
+const sexo = 'F';
+const contribuicao = 22;
+
+
+
+const apM = idade + contribuicao;
+const apF = idade + contribuicao;
+
+
+
+
+
+if (sexo == 'M'){
+    if ((idade > 18)&&(contribuicao > idade)) {
+        console.log(`Erro! idade menor que contribuição!`)
+    }else if (apM >= 90){
+        console.log(`${nome} o seu calculo de aposentadoria é o seguinte: ${idade} ano de idade + ${contribuicao} anos de contribuição = ${apM} anos de contribuição, você ja é passivel de aposentaddoria.`)
+    }else if (sexo == 'M'){
+        console.log(`${nome} o seu calculo de aposentadoria é o seguinte: ${idade} ano de idade + ${contribuicao} anos de contribuição = ${apM} anos de contribuição, não é passivel de aposentaddoria ainda, é necessário ter 90 anos.`)
+    }
+}
+
+if (sexo == 'F'){
+    if ((idade > 18)&&(contribuicao > idade)) {
+        console.log(`Erro! idade menor que contribuição!`)
+    }else if (apF >= 85){
+        console.log(`${nome} o seu calculo de aposentadoria é o seguinte: ${idade} ano de idade + ${contribuicao} anos de contribuição = ${apF} anos de contribuição, ja é passivel de aposentaddoria.`)
+    }else if (sexo == 'F'){
+        console.log(`${nome} o seu calculo de aposentadoria é o seguinte: ${idade} ano de idade + ${contribuicao} anos de contribuição = ${apF} anos de contribuição, não é passivel de aposentaddoria ainda, é necessário ter 85 anos.`)
+    }
+}
