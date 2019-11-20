@@ -1,0 +1,70 @@
+const user = {
+    name: 'Mariana',
+    transactions: [],
+    balance: 0
+  } 
+
+function createTransaction (addTransaction){                  
+    if(addTransaction.type === "credit") {
+      user.balance = user.balance + addTransaction.value
+    }else if (addTransaction.type === "debit") {
+      user.balance = user.balance - addTransaction.value
+    }
+    user.transactions.push(addTransaction)
+}
+
+function getHigherTransactionByType (type) {
+  let maxTransaction
+  let maxValue = 0
+  for (transaction of user.transactions) {
+    if ((transaction.type == type) && (transaction.value > maxValue )) {
+      maxTransaction = transaction
+      maxValue = transaction.value
+    }
+  }
+  return console.log(maxTransaction)
+}
+
+function getAverageTransactionValue() {
+  let getAvarege = 0
+  for (let transaction of user.transactions) {
+    getAvarege = getAvarege + transaction.value
+
+  }
+  average = getAvarege / user.transactions.length
+
+  return console.log(`Average: ${average}`)
+}
+
+function getTransactionsCount() {
+  let opCredit = 0
+  let opDebit = 0
+  for (let transaction of user.transactions){
+    if (transaction.type === "credit"){
+      opCredit = opCredit + 1
+    }else if (transaction.type === "debit") {
+      opDebit = opDebit + 1
+    }
+  }
+  return console.log(`Credit ${opCredit}, Debit ${opDebit}`)
+}
+
+
+
+createTransaction({ type: 'credit', value: 50 })
+createTransaction({ type: 'credit', value: 1200 })
+createTransaction({ type: 'credit', value: 126 })
+createTransaction({ type: 'credit', value: 120 })
+createTransaction({ type: 'debit', value: 80 })
+createTransaction({ type: 'debit', value: 300 })
+createTransaction({ type: 'debit', value: 350 })
+
+
+console.log(`${user.name} Your balance: ${user.balance}`)
+
+getHigherTransactionByType('credit')
+getHigherTransactionByType('debit')
+
+getAverageTransactionValue()
+
+getTransactionsCount()
