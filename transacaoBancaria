@@ -41,9 +41,9 @@ function getTransactionsCount() {
   let opDebit = 0
   for (let transaction of user.transactions){
     if (transaction.type === "credit"){
-      opCredit = opCredit + 1
+      opCredit ++
     }else if (transaction.type === "debit") {
-      opDebit = opDebit + 1
+      opDebit ++
     }
   }
   return console.log(`Credit ${opCredit}, Debit ${opDebit}`)
