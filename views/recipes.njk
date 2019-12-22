@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/github.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+<title>Receitas - Foodfy</title>
+
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="cards">
+        {% for item in items %}
+        <div class="card" id= '{{item.id}}'>
+            <a href="/recipes/{{item.index}}"><img src="{{item.image}}" alt="Imagem de {{item.title}}"></a>
+            <h4>{{item.title}}</h4>
+            <p>{{item.author}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</main> 
+
+    <script src="/script.js"></script>
+
+{% endblock %}
