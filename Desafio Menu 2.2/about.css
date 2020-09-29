@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+header {
+    background-color: #441564ab;
+    width: 0 auto;
+    padding: 32px;
+}
+
+.cabecalho{ 
+    text-align: center;
+}
+
+.cabecalho .links a {
+    margin: 0 28px;
+    line-height: 28px;
+    text-decoration: none;
+    color: rgb(104, 102, 102);
+    font-size: 20px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.cabecalho .links a:hover{
+    color: #7f21eb;
+    transition: 0.5s;
+}
+
+.presentation {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+    
+}
+
+img {
+    border: 8px solid;
+    border-radius: 50%;
+    border-color: #461d92;
+    height: 400px;
+}
+
+h1{
+    color: #fff;
+    display: block;
+    font-size: 2.4em;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+h2{
+    color: #fff;
+    display: block;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1em;
+    line-height: 30px;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+
+.presentation ul {
+    display: flex;
+}
+
+.presentation ul li{
+    position: relative;
+    display: block;
+    color: rgb(202, 202, 202);
+    line-height: 60px;
+    margin: 0 auto;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.presentation .node{
+    color: seagreen;
+}
+
+.presentation .reactjs{
+    color: gold;
+}
+
+.presentation .reactn{
+    color: dodgerblue;
+}
+
+/*Are starting here the CSS code of footer*/
+
+.socialMedias {
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedias a {
+    text-decoration: none;
+    color: #666;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.socialMedias ul {
+    display: flex;
+}
+
+.socialMedias ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.socialMedias ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #7f21eb;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.socialMedias ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #7f21eb;
+}
+
+.socialMedias ul li:hover{
+    color: #ffa502;
+    box-shadow: 0 0 15px #7f21eb;
+    text-shadow: 0 0 15px #7f21eb;
+}
+
+.socialMedias .fa-github:hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #918e96;
+    text-shadow: 0 0 15px #969399;
+}
+
+.socialMedias .fa-instagram:hover{
+    color: #a52828;
+    box-shadow: 0 0 15px #db9231;
+    text-shadow: 0 0 15px #eedc3a;
+}
+
+.socialMedias .fa-facebook-f:hover{
+    color: #2943b3;
+    box-shadow: 0 0 15px #2943b3;
+    text-shadow: 0 0 15px #2943b3;
+}
