@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body, html{
+
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 25%;
+    background:#000;
+
+}
+
+/* Are starting here the CSS code of the main page */
+
+
+/* Company name code */
+h1{
+    line-height: 60px;
+    margin-right: 60px;
+    color: #7f21eb;
+    cursor: pointer;
+}
+
+/* Company name code  finish*/
+
+
+/* Are starting here the CSS code of the info menu */
+
+.wrapper{
+    display: inline-flex;
+    padding: 30px;
+}
+
+.wrapper .icon{
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon span{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    display: block;
+    background: #fff;
+    text-align: center ;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.wrapper .icon:hover span a{
+    color: #fff;
+}
+
+.wrapper .icon span a{
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper .icon .tooltip{
+    background: #fff;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translatex(-50%) rotate(45deg );
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.wrapper .Comunidade:hover span,
+.wrapper .Comunidade:hover .tooltip,
+.wrapper .Comunidade:hover .tooltip::before{
+    background: #a31eaf;
+}
+
+.wrapper .Email:hover span,
+.wrapper .Email:hover .tooltip,
+.wrapper .Email:hover .tooltip::before{
+    background: #4670e6;
+}
+
+.wrapper .Contato:hover span,
+.wrapper .Contato:hover .tooltip,
+.wrapper .Contato:hover .tooltip::before{
+    background: #27ac53;
+}
+
+.wrapper .About:hover span,
+.wrapper .About:hover .tooltip,
+.wrapper .About:hover .tooltip::before{
+    background: #7f21eb;
+}
+
+
+/* Are starting here the CSS code of the About page */
+
+
+
+header{
+    position: relative;
+    background-color: var(--font-card-color);
+    width: 0 auto;
+    
+    padding: 32px;
+}
+
+.cabecalho {
+    text-align: center;
+}
