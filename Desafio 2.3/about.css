@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+header {
+    background-color: #441564ab;
+    width: 0 auto;
+    padding: 32px;
+}
+
+.cabecalho{ 
+    text-align: center;
+}
+
+.cabecalho .links a {
+    margin: 0 28px;
+    line-height: 28px;
+    text-decoration: none;
+    color: rgb(104, 102, 102);
+    font-size: 20px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.cabecalho .links a:hover{
+    color: #7f21eb;
+    transition: 0.5s;
+}
+
+.presentation {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+    
+}
+
+.presentation .img-container img {
+    border: 8px solid;
+    border-radius: 50%;
+    border-color: #461d92;
+    height: 400px;
+}
+
+.presentation h1{
+    color: #fff;
+    display: block;
+    font-size: 2.4em;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.presentation h2{
+    color: #fff;
+    display: block;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.presentation h3{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1em;
+    line-height: 30px;
+    font-weight: normal;
+    margin-inline-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+
+.presentation ul {
+    display: flex;
+}
+
+.presentation ul li{
+    position: relative;
+    display: block;
+    color: rgb(202, 202, 202);
+    line-height: 60px;
+    margin: 0 auto;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.presentation .node{
+    color: seagreen;
+}
+
+.presentation .reactjs{
+    color: gold;
+}
+
+.presentation .reactn{
+    color: dodgerblue;
+}
+
+/*Are starting here the CSS code of footer*/
+
+.socialMedias {
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedias a {
+    text-decoration: none;
+    color: #666;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.socialMedias ul {
+    display: flex;
+}
+
+.socialMedias ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.socialMedias ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #7f21eb;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+
+
+.socialMedias .fa-github:hover{
+    color: #ffffff;
+ 
+    text-shadow: 0 0 15px #696969;
+}
+
+.socialMedias .fa-instagram:hover{
+    color: #a52828;
+
+    text-shadow: 0 0 15px #f1870d;
+}
+
+.socialMedias .fa-facebook-f:hover{
+    color: #4c60b9;
+    
+    text-shadow: 0 0 15px #1a44ff;
+}
+
+/*Are starting here the CSS code of cards*/
+
+.wrapper h1{
+    line-height: 100px;
+    text-align: center;
+    color: #b4b3b3;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 30px;
+    
+}
+
+.container {
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.text,
+.text-info {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.text-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.Card-author,
+.Card-time {
+    background: #5f4196c0;
+    filter: brightness(80%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*Are starting here the CSS code of Modal*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    margin: 5vh auto;
+    position: relative;
+
+}
+
+.modal .close-modal,
+.modal-fullscreen {
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/*Are starting here the CSS code of Modal Active*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Are starting here the CSS code of Modal Active fullscreen*/
+
+.modal.fullscreen {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0vh auto;
+}
+
+/*Are starting here the CSS code of Iframe*/
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 3.5vh;
+}
